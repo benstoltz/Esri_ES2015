@@ -1,5 +1,8 @@
 # ES2015 Esri ArcGIS JS API Examples
 
+Note: Currently using WebStorms built in Babel watcher. Will transition to a better workflow moving forward.
+
+
 This repo will contain examples of using ES2015 along with the ArcGIS JS Api. Eventually many samples from the main
 Esri documentation will be converted and added here. 
 
