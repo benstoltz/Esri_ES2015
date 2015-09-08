@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS API and Babel</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css">
+
+    <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #search {
+            display: block;
+            position: absolute;
+            z-index: 3;
+            top: 20px;
+            left: 75px;
+
+        }
+        
+        .spotlight {
+            z-index: -1;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            opacity: 0;
+            -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0px 0px 20px 20px;
+            -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0px 0px 20px 20px;
+            box-shadow: inset rgba(0, 0, 0, 0.25) 0px 0px 20px 20px;
+            -webkit-transition: all 1000ms;
+            -moz-transition: all 1000ms;
+            -ms-transition: all 1000ms;
+            -o-transition: all 1000ms;
+            transition: all 1000ms;
+        }
+        .spotlight-active {
+            z-index: 2;
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body class="claro">
+
+<!--ESRI markup begin-->
+
+<div id="search"></div>
+<div id="map"></div>
+
+<!--ESRI markup end-->
+
+<!--Scripts-->
+<script src="http://js.arcgis.com/3.14/"></script>
+<script>
+    require(['./source-compiled.js'], function (map) {
+        // do nothing this just loads up our app
+    })
+</script>
+</body>
+</html>
