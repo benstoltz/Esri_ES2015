@@ -1,0 +1,1 @@
+{"version":3,"sources":["source.js"],"names":[],"mappings":"","file":"source-compiled.js","sourcesContent":["import Map from \"esri/map\";\r\nimport mobile from \"dojox/mobile\";\r\nimport parser from \"dojox/mobile/parser\";\r\n"]}
